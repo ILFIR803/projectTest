@@ -1,5 +1,20 @@
-*body      {
-   color: red;
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body {
+   background-color: #110A1D;
+}
+.container {
+   margin: 0 140px;  
+   color:  #fff;
+   font-family: 'Lexend'
 }
 
-   /* body style */
+@import "block/header";
+@import "block/content";
+
+.active {
+   background-color: #478BF9;
+}

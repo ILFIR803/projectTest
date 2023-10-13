@@ -1,0 +1,60 @@
+.header {
+   margin-top: 16px;
+   &__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 96px;
+      padding: 0 48px;
+      font-size: 16px;
+      color:  #FFF;
+      font-weight: 400;
+      line-height: 20px;
+      border: 4px solid #478BF9;
+      background-color: #110A1D;
+      border-radius: 50px 50px 50px 50px;
+   }
+   &__logo {
+      width: 287px;
+   }
+   &__nav {
+      padding: 0 8px;
+      width: 588px;
+      &-list {
+         display: flex;
+         justify-content: space-around;
+         list-style-type: none;
+      }
+      &-item {
+         cursor: pointer;
+         &:hover {
+            color: #478BF9;
+         }
+      }
+   }
+   &__buttons {
+      width: 287px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-around;
+      align-items: center; 
+   }
+}
+
+.button {
+   height: 48px;
+   padding: 14px 14px;
+   text-align: center;
+   border: 2px solid #9DADF2;
+   border-radius: 24px 24px 24px 24px;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   img {
+      margin-right: 8px;
+   }
+   &:hover {
+      background-color: #133049;
+   }
+}
