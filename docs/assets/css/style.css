@@ -55,6 +55,7 @@ body {
 
 .header__nav-item:hover {
     color: #478BF9;
+    text-decoration: underline;
 }
 
 .header__buttons {
@@ -261,6 +262,56 @@ body {
     100% {
         transform: translateY(0);
     }
+}
+
+.footer {
+    border-radius: 64px 64px 0px 0px;
+    border-top: 4px solid #478BF9;
+    border-right: 4px solid #478BF9;
+    border-left: 4px solid #478BF9;
+    background: #1E1231;
+    padding: 40px 0 24px 0;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.footer__pages {
+    display: flex;
+    justify-content: left;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+.footer__pages_item {
+    cursor: pointer;
+}
+
+.footer__pages_item:hover {
+    color: #478BF9;
+    text-decoration: underline;
+}
+
+.footer__social {
+    text-align: end;
+}
+
+.footer__social_text {
+    margin-bottom: 14px;
+}
+
+.footer__social_links {
+    display: flex;
+    justify-content: right;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+}
+
+.footer__social_icon {
+    fill: #478BF9;
 }
 
 .active {

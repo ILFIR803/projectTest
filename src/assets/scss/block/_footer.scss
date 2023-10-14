@@ -1,0 +1,42 @@
+.footer {
+   border-radius: 64px 64px 0px 0px;
+   border-top: 4px solid #478BF9;
+   border-right: 4px solid #478BF9;
+   border-left: 4px solid #478BF9;
+   background: #1E1231;
+   padding: 40px 0 24px 0;
+   
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+   }
+   &__pages {
+      display: flex;
+      justify-content: left;
+      column-gap: 40px;
+      &_item {
+         cursor: pointer;
+         &:hover {
+         color: #478BF9;
+         text-decoration:underline;
+         }
+      }
+   }
+   &__social {
+      text-align: end;
+      &_text {
+         margin-bottom: 14px;
+      }
+      &_links {
+         display: flex;
+         justify-content: right;
+         column-gap: 8px;
+      }
+      &_icon {
+            fill:#478BF9;
+            
+      }
+      
+   }
+}
