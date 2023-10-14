@@ -365,7 +365,7 @@ body {
 .footer__social_icon {
     width: 32px;
     height: 32px;
-    background: url("../../images/social/BG_static.png");
+    background: url("./../images/social/BG_static.png");
     transition: all 0.3s;
     position: relative;
 }
