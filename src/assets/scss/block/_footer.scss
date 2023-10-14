@@ -5,11 +5,13 @@
    border-left: 4px solid #478BF9;
    background: #1E1231;
    padding: 40px 0 24px 0;
-   
+   position: relative;
+   z-index: 444;
    &__wrapper {
       display: flex;
       justify-content: space-between;
       align-items: end;
+      
    }
    &__pages {
       display: flex;
@@ -34,9 +36,20 @@
          column-gap: 8px;
       }
       &_icon {
-            fill:#478BF9;
-            
+            width: 32px;
+            height: 32px;
+            background: url('/assets/images/social/BG_static.png');
+            transition: all 0.3s;
+            &:hover {
+               background: url('/assets/images/social/BG_hover.png');
+            }
+            position: relative;
+            img {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+            }
       }
-      
    }
 }

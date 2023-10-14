@@ -37,6 +37,11 @@
       line-height: 32px; /* 133.333% */
       text-transform: uppercase;
       border: none;
+      &:hover {
+         cursor: pointer;
+         background-color: #2b7bfa;;
+      }
+     
    }
    &__slider {
       width: 335px;
@@ -44,7 +49,8 @@
       display: flex;
       justify-content: space-around;
       overflow: hidden;
-
+      z-index: -3;
+      position: relative;
       &_item {
          display: flex;
          flex-direction: column;
@@ -77,6 +83,7 @@
    &__blog {
       margin-top: 140px;
       width: 531px;
+      
       &_title {
          font-size: 40px;
          font-style: normal;
@@ -122,6 +129,10 @@
       &_item {
          width: auto;
          margin-bottom: 16px;
+         &:hover {
+            cursor: pointer;
+            background-color: #478BF9;;
+         }
          &:nth-child(1) {
             margin-top: 24px;
          }

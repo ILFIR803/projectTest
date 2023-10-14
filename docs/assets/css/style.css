@@ -5,13 +5,51 @@
 }
 
 body {
-    background-color: #110A1D;
+    background-color: rgb(17, 10, 29);
 }
 
 .container {
     margin: 0 140px;
     color: #fff;
     font-family: "Lexend";
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1150px;
+    background: linear-gradient(180deg, transparent 63%, rgb(17, 10, 29) 96%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.mask2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    opacity: 0.9;
+    background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+    filter: blur(300px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.mask3 {
+    position: absolute;
+    left: -15%;
+    bottom: 0;
+    width: 226.458px;
+    height: 1302.469px;
+    transform: rotate(-54.311deg);
+    background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.4) 100%);
+    opacity: 0.55;
+    filter: blur(150px);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .header {
@@ -82,7 +120,7 @@ body {
 }
 
 .button:hover {
-    background-color: #133049;
+    background-color: #478BF9;
 }
 
 .content__wrapper {
@@ -131,12 +169,19 @@ body {
     border: none;
 }
 
+.content__btn:hover {
+    cursor: pointer;
+    background-color: #2b7bfa;
+}
+
 .content__slider {
     width: 335px;
     height: 1020px;
     display: flex;
     justify-content: space-around;
     overflow: hidden;
+    z-index: -3;
+    position: relative;
 }
 
 .content__slider_item {
@@ -226,6 +271,11 @@ body {
     background-color: #1E1231;
 }
 
+.content__blog_item:hover {
+    cursor: pointer;
+    background-color: #478BF9;
+}
+
 .content__blog_item:nth-child(1) {
     margin-top: 24px;
 }
@@ -271,6 +321,8 @@ body {
     border-left: 4px solid #478BF9;
     background: #1E1231;
     padding: 40px 0 24px 0;
+    position: relative;
+    z-index: 444;
 }
 
 .footer__wrapper {
@@ -311,9 +363,20 @@ body {
 }
 
 .footer__social_icon {
-    fill: #478BF9;
+    width: 32px;
+    height: 32px;
+    background: url("/assets/images/social/BG_static.png");
+    transition: all 0.3s;
+    position: relative;
 }
 
-.active {
-    background-color: #478BF9;
+.footer__social_icon:hover {
+    background: url("/assets/images/social/BG_hover.png");
+}
+
+.footer__social_icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -4,19 +4,48 @@
    box-sizing: border-box;
 }
 body {
-   background-color: #110A1D;
+   background-color: rgb(17, 10, 29);
 }
 .container {
    margin: 0 140px;  
    color:  #fff;
    font-family: 'Lexend'
 }
-
+.mask {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 1150px;
+   background: linear-gradient(180deg, transparent 63%, rgb(17, 10, 29) 96%);
+   z-index: 0;
+   pointer-events: none;
+}
+.mask2 {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   width: 300px;
+   height: 300px;
+   border-radius: 300px;
+   opacity: 0.9;
+   background: linear-gradient(256deg, #478BF9 0%, #9DADF2 100%);
+   filter: blur(300px);
+   z-index: 0;
+   pointer-events: none
+}
+.mask3 {
+   position: absolute;
+   left: -15%;
+   bottom: 0;
+   width: 226.458px;
+   height: 1302.469px;
+   transform: rotate(-54.311deg);
+   background: linear-gradient(180deg, #478BF9 0%, rgba(71, 139, 249, 0.40) 100%);
+   opacity: 0.55;
+   filter: blur(150px);
+   z-index: 1;
+   pointer-events: none
+}
 @import "block/header";
 @import "block/content";
 @import "block/footer";
-
-
-.active {
-   background-color: #478BF9;
-}
