@@ -371,7 +371,7 @@ body {
 }
 
 .footer__social_icon:hover {
-    background: url("/images/social/BG_hover.png");
+    background: url("./../images/social/BG_hover.png");
 }
 
 .footer__social_icon img {
